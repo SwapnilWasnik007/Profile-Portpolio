@@ -1,5 +1,5 @@
 function downloadResumeFromGDrive () {
-    let url = "https://drive.google.com/file/d/1-2fjp_ZaVIfZEVJuNPYhTm1hThxtFoMI/view?usp=share_link";
+    let url = "https://drive.google.com/file/d/12o69VGBFxKLP8Bp448oG-RE4kIz1neKA/view?usp=sharing";
     fetch(url).then(function(t) {
         return t.blob().then((b)=>{
             var a = document.createElement("a");
