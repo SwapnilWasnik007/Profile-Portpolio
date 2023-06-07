@@ -10,3 +10,16 @@ function downloadResumeFromGDrive () {
         );
     });
 }
+
+let repos = document.getElementById("repoCount");
+
+function getGithubProfile(){
+    const username = 'swapnilwasnik007';
+    fetch(`https://api.github.com/users/${username}`)
+  .then(response =>response.json())
+  .then(data => {
+    repos.innerHTML = data.public_repos;
+  });
+}
+
+getGithubProfile();
