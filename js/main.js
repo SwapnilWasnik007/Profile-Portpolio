@@ -90,7 +90,7 @@
     });
 
     $(document).ready(function () {
-        var startDate = new Date(2018,3,20);
+        var startDate = new Date(2018,12,20);
         var diffDate = new Date(new Date() - startDate);
         var totalExpStr = (diffDate.toISOString().slice(0, 4) - 1970) + "." + diffDate.getMonth() + " Years";
         document.getElementById('totalWorkExpSummary').innerText = totalExpStr;
